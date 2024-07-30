@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بشجع مين؟</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;700&display=swap">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden; /* Prevent scrolling */
+      font-family: "El Messiri", sans-serif; /* Apply the El Messiri font */
+    }
+
+    .image-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures the image covers the container without distortion */
+    }
+
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to bottom, rgba(128,0,128,0) 0%, rgba(128,0,128,0.7) 100%);
+      pointer-events: none; /* Allows clicking through the overlay */
+    }
+
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: center;
+      z-index: 2;
+      padding: 20px; /* Adds padding for better readability */
+      box-sizing: border-box; /* Ensures padding is included in the width */
+      font-size: 1.5rem; /* Base font size */
+      max-width: 80%;
+      max-height: 80%;
+      overflow-y: auto; /* Adds scrolling for overflow content */
+      line-height: 1.6; /* Improves text readability */
+    }
+
+    /* Responsive text size */
+    @media (max-width: 600px) {
+      .text-container {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        max-width: 90%;
+        padding: 10px;
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      .text-container {
+        font-size: 1.3rem; /* Adjust font size for medium screens */
+      }
+    }
+
+    @media (min-width: 1201px) {
+      .text-container {
+        font-size: 1.5rem; /* Adjust font size for larger screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="images/33.jpg" alt="Sample Image" class="image">
+    <div class="gradient-overlay"></div>
+    <div class="text-container">
+      <p>الزمالك، النادي اللي دايماً بيكون في القلب، واللي بيجري في عروقي زي الدم. حبي لنادي الزمالك مش مجرد تشجيع، ده أكتر بكتير من كده. الزمالك بالنسبة لي هو الحب الأول والفرحة اللي مش بتنتهي</p>
+      <p> كنت بشوف اللعيبة بيلعبوا بروح قتالية عالية وبإصرار على الفوز، وده كان بيخليني أحس بالفخر إني زمالكاوي. النادي ده مش بس كورة، ده قصة حياة وذكريات وأحلام</p>
+      <p>أحلى حاجة في الزمالك هي جماهيره العظيمة. الجماهير دي هي اللي بتدي النادي الروح والعزيمة، وهي اللي بتدعم الفريق في الحلوة والمرة. بنكون دايماً على قلب واحد، وبنغني ونشجع من قلبنا. "يا زمالك يا مدرسة لعب وفن وهندسة" دي مش مجرد أغنية، دي حقيقة بنعيشها كل يوم</p>
+      <p>مش هننسى التاريخ العريق للنادي، ولا البطولات اللي رفعنا بيها راسنا. الزمالك عمره ما كان مجرد نادي بيلعب كورة، ده مؤسسة رياضية واجتماعية كبيرة ليها دور مهم في المجتمع. النادي علمنا معنى الانتماء والوفاء، وخلانا نعرف يعني إيه روح الفريق والتضحية</p>
+      <p>في النهاية، حب الزمالك مش بيتقاس بالكلام، ده إحساس بيجري في الدم ومشاعر بتكبر مع كل لحظة. مهما كانت الظروف، الزمالك دايماً في القلب، والفرحة بتحلى بوجوده. عشان كده، هفضل طول عمري زمالكاوي، وهفضل أقول بفخر: "أنا بحب الزمالك"</p>
+    </div>
+  </div>
+</body>
+</html>
